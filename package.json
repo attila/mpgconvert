@@ -1,6 +1,6 @@
 {
   "name": "mpgconvert",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Attila Beregszaszi <attila@frontseed.com>",
   "license": "MIT",
   "repository": "attila/mpgconvert",
