@@ -1,0 +1,41 @@
+{
+  "name": "mpgconvert",
+  "version": "0.0.0",
+  "author": "Attila Beregszaszi <attila@frontseed.com>",
+  "license": "MIT",
+  "repository": "attila/mpgconvert",
+  "homepage": "https://github.com/attila/mpgconvert#readme",
+  "engines": {
+    "node": ">=6"
+  },
+  "main": "src/convert.js",
+  "bin": {
+    "mpgc": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "LICENSE"
+  ],
+  "scripts": {
+    "pretest": "standard",
+    "test": "nyc --cache mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "yargs": "^9.0.1"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1",
+    "standard": "^10.0.3",
+    "standard-version": "^4.2.0"
+  },
+  "keywords": [
+    "mpg",
+    "conversion",
+    "fuel",
+    "consumption"
+  ]
+}
